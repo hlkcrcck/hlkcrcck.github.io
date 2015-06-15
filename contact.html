@@ -58,30 +58,33 @@
 	<div class="container pt">
 		<div class="row mt">
 			<div class="col-lg-6 col-lg-offset-3 centered">
-				<h3>CONTACT ME</h3>
+				<h3>İLETİŞİM</h3>
 				<hr>
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+				<p>Aşağıdaki formdan bana direk mesaj gönderebilir ya da en alttaki sosyal medya hesaplarımdan iletişime geçebilirsiniz.</p>
 			</div>
 		</div>
 		<div class="row mt">	
 			<div class="col-lg-8 col-lg-offset-2">
-				<form role="form">
-				  <div class="form-group">
-				    <input type="name" class="form-control" id="NameInputEmail1" placeholder="Your Name">
-				    <br>
-				  </div>
-				  <div class="form-group">
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-				    <br>
-				  </div>
-				  <div class="form-group">
-				    <input type="email" class="form-control" id="subjectEmail1" placeholder="Subject">
-				    <br>
-				  </div>
-				  <textarea class="form-control" rows="6" placeholder="Enter your text here"></textarea>
-				    <br>
-				  <button type="submit" class="btn btn-success">SUBMIT</button>
-				</form>    			
+				<form action="//formspree.io/hlkcrcck@gmail.com"
+					method="POST">
+					<div class="form-group">
+						<input type="text" name="name" class="form-control" id="NameInputEmail1" placeholder="Adınız">
+						<br>
+					</div>
+					<div class="form-group">
+						<input type="email" name="_replyto" class="form-control" id="exampleInputEmail1" placeholder="email adresi(Geri dönebilmem için)">
+						<br>
+					</div>
+					<div class="form-group">
+					<textarea class="form-control" rows="6" placeholder="Mesajın"></textarea>
+						<br>
+					</div>					
+					<input type="text" name="_gotcha" style="display:none" />
+					<input type="hidden" name="_subject" value="kendim.me den biri mesaj attı !!!" />
+					<input type="hidden" name="_next" value="//site.io/thanks.html" />
+					
+					<input type="submit" class="btn btn-success" value="Gönder">
+				</form>
 			</div>
 		</div><!-- /row -->
 	</div><!-- /container -->
@@ -93,11 +96,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4">
-					<h4>My Bunker</h4>
+					<h4>Beta</h4>
 					<p>
-						Some Address 987,<br/>
-						+34 9054 5455, <br/>
-						Madrid, Spain.
+						Henüz test aşamasındadır<br/>
+						hlkcrcck@gmail.com, <br/>
+						İstanbul/Türkiye.
 					</p>
 				</div><!-- /col-lg-4 -->
 				
