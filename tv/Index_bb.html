@@ -1,0 +1,82 @@
+﻿<!doctype html>
+<!--<html manifest="MB100AppCacheManifest.ashx" lang="en">-->
+<html lang="en">
+<head>
+    <title></title>
+    <!--<link href="css/Index.css" rel="stylesheet" type="text/css" />-->
+    <link href="css/header-footer-menus-css.css" rel="stylesheet" type="text/css" />
+    <script src="script/Keys.js" type="text/javascript"></script>
+    <script src="script/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="script/Navigation.js" type="text/javascript"></script>
+    <script src="script/Starter.js" type="text/javascript"></script>
+</head>
+<body>
+    <!--<object id="applicationmanager" type="application/oipfApplicationManager" style="position: absolute;
+        left: 0px; top: 0px; width: 0px; height: 0px;">
+    </object>-->
+    <object id="video" type="video/broadcast">
+    </object>
+    <div id="topMenu" class="header_menu_background">
+        <div id="topMenuBottomLine">
+        </div>
+        <div id="weatherInfo">
+            <img id="weatherStatIcon" src="images/topmenu/weatherIcon.png" />
+            <span id="temperature" class="header_menu_temprature">23 °C</span> <span id="location"
+                class="header_menu_location">İstanbul, Turkey</span>
+        </div>
+        <div id="logo" class="header_menu_logo_svg">
+        </div>
+        <div id="timeInfo">
+            <span id="hourField">8:30 </span><span id="dayField">Wednesday, July 01 </span>
+        </div>
+    </div>
+    <div id="mainMenu" class="mainMenu">
+        <div id="mainMenuTopLine">
+        </div>
+        <div id="menuItem0" class="mainMenuItem">
+            <a href="#">
+                <img src="images/mainmenu/RECENT_ICON.png" /></a> <span>RECENT</span>
+        </div>
+        <div id="menuItem1" class="mainMenuItem">
+            <a href="#">
+                <img src="images/mainmenu/FAVORITES_ICON.png" /></a> <span>FAVORITES</span>
+        </div>
+        <div id="menuItem2" class="mainMenuItem">
+            <a href="#">
+                <img src="images/mainmenu/CHANNEL_GUIDE_ICON.png" /></a> <span>CHANNEL GUIDE</span>
+        </div>
+        <div id="menuItem3" class="mainMenuItem">
+            <a href="#">
+                <img src="images/mainmenu/APPLICATIONS_ICON.png" /></a> <span>APPLICATIONS</span>
+        </div>
+        <div id="menuItem4" class="mainMenuItem">
+            <a href="#">
+                <img src="images/mainmenu/INPUT_ICON.png" /></a> <span>INPUT</span>
+        </div>
+        <div id="menuItem5" class="mainMenuItem">
+            <a href="#">
+                <img src="images/mainmenu/MEDIA_PLAYER_ICON.png" /></a> <span>MEDIA PLAYER</span>
+        </div>
+        <div id="menuItem6" class="mainMenuItem">
+            <a href="#">
+                <img src="images/mainmenu/WEB_BROWSER_ICON.png" /></a> <span>WEB BROWSER</span>
+        </div>
+        <div id="menuItem7" class="mainMenuItem">
+            <a href="#">
+                <img src="images/mainmenu/SETTINGS_ICON.png" /></a> <span>SETTINGS</span>
+        </div>
+    </div>
+</body>
+<script>
+
+    //    var appMgr = document.getElementById("applicationmanager");
+    //    var self = appMgr.getOwnerApplication(window.document);
+    //    var child = self.createApplication("http://192.168.0.79", true);
+    //document.getElementById("video").bindToCurrentChannel();
+    //    var cfg = document.getElementById("video").getChannelConfig();
+    ApplicationManager.getWindowByName("UI").show();
+    ApplicationManager.getWindowByName("UI").activate();
+    ApplicationManager.getWindowByName("UI").keySet.setValue(0x410, "");  // Enable navigation keys
+
+</script>
+</html>
