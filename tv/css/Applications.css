@@ -114,7 +114,7 @@ body {
   z-index: 72;
 }
 #header_menu_background { /*****/
-  background-image: url("../applications-assets/header-menu-texture.png");
+  background-image: url("applications-assets/header-menu-texture.png");
   position: absolute;
   top: 0;
   width: 1920px;
@@ -273,7 +273,7 @@ body {
     z-index: 100;
 }
 .youtube_png {
-  background-image: url("../applications-assets/YouTube.png");
+  background-image: url("applications-assets/YouTube.png");
   position: absolute;
   left: 0px;
   width: 217px;
@@ -294,7 +294,7 @@ body {
   z-index: 64;
 }
 .facebook_png {
-  background-image: url("../applications-assets/facebook.png");
+  background-image: url("applications-assets/facebook.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -314,7 +314,7 @@ body {
   z-index: 62;
 }
 .twitter_png {
-  background-image: url("../applications-assets/twitter.png");
+  background-image: url("applications-assets/twitter.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -334,7 +334,7 @@ body {
   z-index: 60;
 }
 .netflix_png {
-  background-image: url("../applications-assets/netflix.png");
+  background-image: url("applications-assets/netflix.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -354,7 +354,7 @@ body {
   z-index: 58;
 }
 .dailymotion_png {
-  background-image: url("../applications-assets/dailymotion.png");
+  background-image: url("applications-assets/dailymotion.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -374,7 +374,7 @@ body {
   z-index: 56;
 }
 .amazon_png {
-  background-image: url("../applications-assets/amazon.png");
+  background-image: url("applications-assets/amazon.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -394,7 +394,7 @@ body {
   z-index: 54;
 }
 .vimeo_png {
-  background-image: url("../applications-assets/vimeo.png");
+  background-image: url("applications-assets/vimeo.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -414,7 +414,7 @@ body {
   z-index: 52;
 }
 .accuweather_png {
-  background-image: url("../applications-assets/accuweather.png");
+  background-image: url("applications-assets/accuweather.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -435,7 +435,7 @@ body {
 }
 /*****************************/
 .ntv_png {
-  background-image: url("../applications-assets/ntv.png");
+  background-image: url("applications-assets/ntv.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -455,7 +455,7 @@ body {
   z-index: 44;
 }
 .digiturk_png {
-  background-image: url("../applications-assets/digiturk.png");
+  background-image: url("applications-assets/digiturk.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -475,7 +475,7 @@ body {
   z-index: 42;
 }
 .mynet_png {
-  background-image: url("../applications-assets/mynet.png");
+  background-image: url("applications-assets/mynet.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -495,7 +495,7 @@ body {
   z-index: 40;
 }
 .arte_png {
-  background-image: url("../applications-assets/arte.png");
+  background-image: url("applications-assets/arte.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -515,7 +515,7 @@ body {
   z-index: 38;
 }
 .ntvspor_png {
-  background-image: url("../applications-assets/ntv-spor.png");
+  background-image: url("applications-assets/ntv-spor.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -535,7 +535,7 @@ body {
   z-index: 36;
 }
 .skype_png {
-  background-image: url("../applications-assets/skype.png");
+  background-image: url("applications-assets/skype.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -555,7 +555,7 @@ body {
   z-index: 34;
 }
 .flickr_png {
-  background-image: url("../applications-assets/flickr.png");
+  background-image: url("applications-assets/flickr.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -575,7 +575,7 @@ body {
   z-index: 32;
 }
 .qvc_png {
-  background-image: url("../applications-assets/qvc.png");
+  background-image: url("applications-assets/qvc.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -595,7 +595,7 @@ body {
   z-index: 30;
 }
 .operatvstore_png {
-  background-image: url("../applications-assets/opera-tv-store.png");
+  background-image: url("applications-assets/opera-tv-store.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -615,7 +615,7 @@ body {
   z-index: 28;
 }
 .ebay_png {
-  background-image: url("../applications-assets/ebay.png");
+  background-image: url("applications-assets/ebay.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -635,7 +635,7 @@ body {
   z-index: 26;
 }
 .ligtv_png {
-  background-image: url("../applications-assets/ligtv.png");
+  background-image: url("applications-assets/ligtv.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -655,7 +655,7 @@ body {
   z-index: 24;
 }
 .zdf_png {
-  background-image: url("../applications-assets/zdf.png");
+  background-image: url("applications-assets/zdf.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -675,7 +675,7 @@ body {
   z-index: 22;
 }
 .trt_png {
-  background-image: url("../applications-assets/trt.png");
+  background-image: url("applications-assets/trt.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -695,7 +695,7 @@ body {
   z-index: 20;
 }
 .ttnet_png {
-  background-image: url("../applications-assets/ttnet.png");
+  background-image: url("applications-assets/ttnet.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -715,7 +715,7 @@ body {
   z-index: 18;
 }
 .natgeowild_png {
-  background-image: url("../applications-assets/natgeowild.png");
+  background-image: url("applications-assets/natgeowild.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -735,7 +735,7 @@ body {
   z-index: 16;
 }
 .filmbox_png {
-  background-image: url("../applications-assets/filmbox.png");
+  background-image: url("applications-assets/filmbox.png");
   position: absolute;
   width: 217px;
   height: 100px;
@@ -841,7 +841,7 @@ body {
 }
 
 #app_bg_texture_png {
-  background-image: url("../applications-assets/app-bg-texture.png");
+  background-image: url("applications-assets/app-bg-texture.png");
   width: 1920px;
   height: 1080px;
   z-index: 2;

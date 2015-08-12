@@ -187,7 +187,7 @@ var AppsMenuControl = {
             $('#featuredItem' + this.SelectedIndex).addClass("appContainerSelected");
 
             var d = $('<div class="favCircle">');
-            var fav = $('<img class="favStar" src="../applications-assets/apps-favorite-icon-outline.svg">');
+            var fav = $('<img class="favStar" src="applications-assets/apps-favorite-icon-outline.svg">');
             d.append(fav);
             $('#featuredItem' + this.SelectedIndex + " .favSymbol").append(d);
 
