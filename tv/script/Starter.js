@@ -50,10 +50,10 @@ function GoOffline() {
 }
 
 function OfflineStorage() {
-    pageData = JSON.parse(localStorage.pageData);
-    allApps = JSON.parse(localStorage.allApps);
-    appCategories = JSON.parse(localStorage.appCategories);
-    mb100favorites = JSON.parse(localStorage.mb100favorites);
+    //pageData = JSON.parse(localStorage.pageData);
+    //allApps = JSON.parse(localStorage.allApps);
+    //appCategories = JSON.parse(localStorage.appCategories);
+    //mb100favorites = JSON.parse(localStorage.mb100favorites);
     StartApp();
 }
 
