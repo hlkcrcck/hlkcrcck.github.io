@@ -203,7 +203,7 @@ var MainMenuControl = {
                 ApplicationManager.getWindowByName("DEFAULT_CSP").activate();
                 break;
             case 3:
-                window.location.href = "../Applications.html";
+                window.location.href = "Applications.html";
                 this.ActiveFlag = 0;
                 break;
             case 4:
