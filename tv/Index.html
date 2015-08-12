@@ -1,0 +1,471 @@
+﻿<!doctype html>
+<!--<html manifest="MB100AppCacheManifest.ashx" lang="en">-->
+<html lang="en" xmlns="http://www.w3.org/2000/svg">
+<head>
+    <title></title>
+    <link href="css/Index.css" rel="stylesheet" type="text/css" />
+    <link href="css/ChannelList.css" rel="stylesheet" type="text/css" />
+    <script src="script/Keys.js" type="text/javascript"></script>
+    <script src="script/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="script/Navigation.js" type="text/javascript"></script>
+    <script src="script/Functions.js" type="text/javascript"></script>
+    <script src="script/ChannelList.js" type="text/javascript"></script>
+    <script src="script/Starter.js" type="text/javascript"></script>
+</head>
+<body>
+    <!--<object id="applicationmanager" type="application/oipfApplicationManager" style="position: absolute;
+        left: 0px; top: 0px; width: 0px; height: 0px;">
+    </object>-->
+<object id="video" type="video/broadcast">
+</object>
+<div id="channelInfoBar" class="channelInfoBar"><div class="channelIndex">99</div><div id="channelLogo">Logo</div><div id="channelName">ATV</div></div>
+    <div id="topMenu" class="topMenu">
+        <div id="topMenuBottomLine">
+        </div>
+        <div class="flipcard">
+            <div class="front">
+                <div id="weatherInfo">
+                    <div id="weatherStatIcon">
+                    </div>
+                    <span id="temperature">23 °C</span> <span id="location">İstanbul, Turkey</span>
+                </div>
+            </div>
+            <div class="back">
+                <p id="activeMenu">
+                    Settings</p>
+            </div>
+        </div>
+        <div id="logo">
+        </div>
+        <div id="pmField">
+        </div>
+        <div id="hourField">
+        </div>
+        <div id="dayField">
+        </div>
+    </div>
+    <div class="channelList">
+        <div class="channels">
+            <div class="channelsSlider">
+            </div>
+        </div>
+    </div>
+    <div class="settingSound">
+        <div class="settingElement" id="settingElement0">
+            <p class="settingName">
+                Volume</p>
+            <div class="sliderSetting">
+                <div class="sliderLine">
+                    <div class="sliderBall">
+                    </div>
+                </div>
+                <p class="sliderBound">
+                    12</p>
+            </div>
+        </div>
+        <div class="settingElement" id="settingElement1">
+            <p class="settingName">
+                Equalizer</p>
+            <div class="LRSetting">
+                User</div>
+        </div>
+        <div class="settingElement" id="settingElement2">
+            <p class="settingName">
+                Balance</p>
+            <div class="sliderSetting">
+                <div class="sliderLine">
+                    <div class="sliderBall">
+                    </div>
+                </div>
+                <p class="sliderBound">
+                    0</p>
+            </div>
+        </div>
+        <div class="settingElement" id="settingElement3">
+            <p class="settingName">
+                Headphone</p>
+            <div class="sliderSetting">
+                <div class="sliderLine">
+                    <div class="sliderBall">
+                    </div>
+                </div>
+                <p class="sliderBound">
+                    12</p>
+            </div>
+        </div>
+        <div class="settingElement" id="settingElement4">
+            <p class="settingName">
+                Sound Mode</p>
+            <div class="LRSetting">
+                Stereo</div>
+        </div>
+        <div class="settingElement" id="settingElement5">
+            <p class="settingName">
+                AVL</p>
+            <div class="LRSetting">
+                Off</div>
+        </div>
+        <div class="settingElement" id="settingElement6">
+            <p class="settingName">
+                Headphone/Lineout</p>
+            <div class="LRSetting">
+                Headphone</div>
+        </div>
+        <div class="settingElement" id="settingElement7">
+            <p class="settingName">
+                Dynamic Bass</p>
+            <div class="LRSetting">
+                Off</div>
+        </div>
+        <div class="settingElement" id="settingElement8">
+            <p class="settingName">
+                SRS TruSurround HD</p>
+            <div class="LRSetting">
+                On</div>
+        </div>
+        <div class="settingElement" id="settingElement9">
+            <p class="settingName">
+                Digital Out</p>
+            <div class="LRSetting">
+                Compressed</div>
+        </div>
+        <div class="settingElement" id="settingElement10">
+            <p class="settingName">
+                Audio Description</p>
+            <div class="LRSetting">
+                Off</div>
+        </div>
+        <div class="settingInfo">
+            <div class="settingInfoElement">
+                <img src="images/move-icon.png" />
+                <p>
+                    MOVE</p>
+            </div>
+            <div class="settingInfoElement">
+                <img src="images/edit-icon.png" />
+                <p>
+                    EDIT</p>
+            </div>
+            <div class="settingInfoElement">
+                <img src="images/back-icon.png" /><p>
+                    GO BACK</p>
+            </div>
+            <div class="settingInfoElement">
+                <img src="/images/menu-icon.png" /><p>
+                    EXIT</p>
+            </div>
+        </div>
+    </div>
+    <div class="settingScreen">
+        <div class="settingElement" id="settingElement0">
+            <p class="settingName">
+                3D Setting</p>
+            <div class="LRSetting">
+                OK</div>
+        </div>
+        <div class="settingElement" id="settingElement1">
+            <p class="settingName">
+                Mode</p>
+            <div class="LRSetting">
+                Natural</div>
+        </div>
+        <div class="settingElement" id="settingElement2">
+            <p class="settingName">
+                -Contrast</p>
+            <div class="sliderSetting">
+                <div class="sliderLine">
+                    <div class="sliderBall">
+                    </div>
+                </div>
+                <p class="sliderBound">
+                    0</p>
+            </div>
+        </div>
+        <div class="settingElement" id="settingElement3">
+            <p class="settingName">
+                -Brightness</p>
+            <div class="sliderSetting">
+                <div class="sliderLine">
+                    <div class="sliderBall">
+                    </div>
+                </div>
+                <p class="sliderBound">
+                    50</p>
+            </div>
+        </div>
+        <div class="settingElement" id="settingElement4">
+            <p class="settingName">
+                -Sharpness</p>
+            <div class="sliderSetting">
+                <div class="sliderLine">
+                    <div class="sliderBall">
+                    </div>
+                </div>
+                <p class="sliderBound">
+                    50</p>
+            </div>
+        </div>
+        <div class="settingElement" id="settingElement5">
+            <p class="settingName">
+                -Colour</p>
+            <div class="sliderSetting">
+                <div class="sliderLine">
+                    <div class="sliderBall">
+                    </div>
+                </div>
+                <p class="sliderBound">
+                    50</p>
+            </div>
+        </div>
+        <div class="settingElement" id="settingElement6">
+            <p class="settingName">
+                Power Save Mode</p>
+            <div class="LRSetting">
+                Eco</div>
+        </div>
+        <div class="settingElement" id="settingElement7">
+            <p class="settingName">
+                Backlight</p>
+            <div class="LRSetting">
+                Auto</div>
+        </div>
+        <div class="settingElement" id="settingElement8">
+            <p class="settingName">
+                Noise Reduction</p>
+            <div class="LRSetting">
+                Medium</div>
+        </div>
+        <div class="settingElement" id="settingElement9">
+            <p class="settingName">
+                Advanced Settings</p>
+            <div class="LRSetting">
+                OK</div>
+        </div>
+        <div class="settingElement" id="settingElement10">
+            <p class="settingName">
+                Reset</p>
+            <div class="LRSetting">
+                OK</div>
+        </div>
+        <div class="settingInfo">
+            <div class="settingInfoElement">
+                <img src="images/move-icon.png" />
+                <p>
+                    MOVE</p>
+            </div>
+            <div class="settingInfoElement">
+                <img src="images/edit-icon.png" />
+                <p>
+                    EDIT</p>
+            </div>
+            <div class="settingInfoElement">
+                <img src="images/back-icon.png" /><p>
+                    GO BACK</p>
+            </div>
+            <div class="settingInfoElement">
+                <img src="/images/menu-icon.png" /><p>
+                    EXIT</p>
+            </div>
+        </div>
+    </div>
+    <div id="mainMenu" class="mainMenu">
+        <div id="mainMenuTopLine">
+        </div>
+        <div id="menuItem0" class="mainMenuItem">
+            <a href="#" class="mainMenuLink">
+                <div class="mainmenu_icon_shadow ">
+                </div>
+                <img class="mainMenuImage" src="images/mainmenu/FAVORITES-ICON.svg"/>
+            </a><span class="MainMenumenuName">FAVORITES</span>
+        </div>
+        <div id="menuItem1" class="mainMenuItem">
+            <a href="#" class="mainMenuLink">
+                <div class="mainmenu_icon_shadow ">
+                </div>
+                <img class="mainMenuImage" src="images/mainmenu/RECENT-ICON.svg"/>
+            </a><span class="MainMenumenuName">RECENT</span>
+        </div>
+        <div id="menuItem2" class="mainMenuItem">
+            <a href="#" class="mainMenuLink">
+                <div class="mainmenu_icon_shadow">
+                </div>
+                <img class="mainMenuImage" src="images/mainmenu/CHANNELGUIDE-ICON.svg" /></a>
+            <span class="MainMenumenuName">CHANNEL GUIDE</span>
+        </div>
+        <div id="menuItem3" class="mainMenuItem">
+            <a href="#" class="mainMenuLink">
+                <div class="mainmenu_icon_shadow">
+                </div>
+                <img class="mainMenuImage" src="images/mainmenu/APPLICATIONS-ICON.svg" /></a>
+            <span class="MainMenumenuName">APPLICATIONS</span>
+        </div>
+        <div id="menuItem4" class="mainMenuItem">
+            <a href="#" class="mainMenuLink">
+                <div class="mainmenu_icon_shadow">
+                </div>
+                <img class="mainMenuImage" src="images/mainmenu/MEDIABROWSER-ICON.svg" /></a>
+            <span class="MainMenumenuName">MEDIA PLAYER</span>
+        </div>
+        <div id="menuItem5" class="mainMenuItem">
+            <a href="#" class="mainMenuLink">
+                <div class="mainmenu_icon_shadow">
+                </div>
+                <img class="mainMenuImage" src="images/mainmenu/WEBBROWSER-ICON.svg" /></a>
+            <span class="MainMenumenuName">WEB BROWSER</span>
+        </div>
+        <div id="menuItem6" class="mainMenuItem">
+            <a href="#" class="mainMenuLink">
+                <div class="mainmenu_icon_shadow">
+                </div>
+                <img class="mainMenuImage" src="images/mainmenu/SETTINGS-ICON.svg" /></a>
+            <span class="MainMenumenuName">SETTINGS</span>
+        </div>
+    </div>
+    <div id="mediaPlayerMenu" class="mediaPlayerMenu">
+        <div id="mediaPlayerMenuTopLine">
+        </div>
+        <div id="mediaPlayerMenuItem5" class="returnItem">
+            <a href="#" class="mediaPlayerMenuLink">
+                <img class="returnImage" src="images/settingsmenu/return-icon.svg" />
+            </a>
+        </div>
+        <div id="mediaPlayerMenuItem0" class="mediaPlayerMenuItem">
+            <a href="#" class="mediaPlayerMenuLink">
+                <img class="mediaPlayerMenuImage" src="images/mediaplayermenu/1-mediaplayer-videos-icon.svg" />
+            </a><span class="mediaPlayerMenuName">VIDEOS</span>
+        </div>
+        <div id="mediaPlayerMenuItem1" class="mediaPlayerMenuItem">
+            <a href="#" class="mediaPlayerMenuLink">
+                <img class="mediaPlayerMenuImage" src="images/mediaplayermenu/2-mediaplayer-photos-icon.svg" /></a>
+            <span class="mediaPlayerMenuName">PHOTOS</span>
+        </div>
+        <div id="mediaPlayerMenuItem2" class="mediaPlayerMenuItem">
+            <a href="#" class="mediaPlayerMenuLink">
+                <img class="mediaPlayerMenuImage" src="images/mediaplayermenu/3-mediaplayer-music-icon.svg" /></a>
+            <span class="mediaPlayerMenuName">MUSIC</span>
+        </div>
+        <div id="mediaPlayerMenuItem3" class="mediaPlayerMenuItem">
+            <a href="#" class="mediaPlayerMenuLink">
+                <img class="mediaPlayerMenuImage" src="images/mediaplayermenu/4-mediaplayer-recordings-icon.svg" /></a>
+            <span class="mediaPlayerMenuName">RECORDINGS</span>
+        </div>
+        <div id="mediaPlayerMenuItem4" class="mediaPlayerMenuItem">
+            <a href="#" class="mediaPlayerMenuLink">
+                <img class="mediaPlayerMenuImage" src="images/mediaplayermenu/5-mediaplayer-settings-icon.svg" /></a>
+            <span class="mediaPlayerMenuName">SETTINGS</span>
+        </div>
+    </div>
+    <div id="settingsMenu" class="settingsMenu">
+        <div id="settingsMenuTopLine">
+        </div>
+        <div id="settingsMenuItem5" class="returnItem">
+            <a href="#" class="settingsMenuLink">
+                <img class="returnImage" src="images/settingsmenu/return-icon.svg" />
+            </a>
+        </div>
+        <div id="settingsMenuItem0" class="settingsMenuItem">
+            <a href="#" class="settingsMenuLink">
+                <img class="settingsMenuImage" src="images/settingsmenu/1-settings-picture-icon.svg" />
+            </a><span class="settingsMenuName">PICTURE</span>
+        </div>
+        <div id="settingsMenuItem1" class="settingsMenuItem">
+            <a href="#" class="settingsMenuLink">
+                <img class="settingsMenuImage" src="images/settingsmenu/2-settings-sound-icon.svg" /></a>
+            <span class="settingsMenuName">SOUND</span>
+        </div>
+        <div id="settingsMenuItem2" class="settingsMenuItem">
+            <a href="#" class="settingsMenuLink">
+                <img class="settingsMenuImage" src="images/settingsmenu/3-settings-general-icon.svg" /></a>
+            <span class="settingsMenuName">GENERAL</span>
+        </div>
+        <div id="settingsMenuItem3" class="settingsMenuItem">
+            <a href="#" class="settingsMenuLink">
+                <img class="settingsMenuImage" src="images/settingsmenu/4-settings-setup-icon.svg" /></a>
+            <span class="settingsMenuName">SETUP</span>
+        </div>
+        <div id="settingsMenuItem4" class="settingsMenuItem">
+            <a href="#" class="settingsMenuLink">
+                <img class="settingsMenuImage" src="images/settingsmenu/5-settings-channellist-icon.svg" /></a>
+            <span class="settingsMenuName">CHANNEL LIST</span>
+        </div>
+    </div>
+<div id="favMenu" class="favMenu">
+    <div id="favMenuTopLine">
+    </div>
+    <div id="favMenuSlider">
+        <div id="favMenuItem0" class="returnItem">
+            <a href="#" class="favMenuLink">
+                <img class="returnImage" src="images/settingsmenu/return-icon.svg"/>
+            </a>
+        </div>
+    </div>
+    <div id="rightArrow" class="rightArrow">
+        <a href="#" class="rightArrowLink">
+            <img class="rightArrowImage" src="images/favoritesmenu/rightarrow.png"/>
+        </a>
+    </div>
+</div>
+    <div id="recentMenu" class="recentMenu">
+        <div id="recentMenuTopLine">
+        </div>
+        <div id="recentMenuSlider">
+            <div id="recentMenuItem0" class="returnItem">
+                <a href="#" class="recentMenuLink">
+                    <img class="returnImage" src="images/settingsmenu/return-icon.svg" />
+                </a>
+            </div>
+        </div>
+        <div id="Div1" class="rightArrow">
+            <a href="#" class="rightArrowLink">
+                <img class="rightArrowImage" src="images/favoritesmenu/rightarrow.png" />
+            </a>
+        </div>
+    </div>
+</body>
+<script>
+
+    //    var appMgr = document.getElementById("applicationmanager");
+    //    var self = appMgr.getOwnerApplication(window.document);
+    //    var child = self.createApplication("http://192.168.0.79", true);
+    //document.getElementById("video").bindToCurrentChannel();
+    //    var cfg = document.getElementById("video").getChannelConfig();
+    var ChannelParams;
+
+    ApplicationManager.getWindowByName("UI").show();
+    ApplicationManager.getWindowByName("UI").activate();
+    ApplicationManager.getWindowByName("UI").keySet.setValue(0xAE | 0xAF | 0x1 | 0x2 | 0x4 | 0x8 | 0x10 | 0x20 | 0x40 | 0x80 | 0x100 | 0x200 | 0x400 | 0x410, "");  // Enable navigation keys
+
+
+    try {
+    HybridUIController.disableSVGWidgets(); //tvnin kendi menusunu iptal etmek için
+    }
+    catch (err) {
+    console.log(err);
+}
+
+    var setAirMouse = function () {
+        try {
+            var a = document.createElement("object");
+            a.id = "Mouse";
+            a.type = "application/pointer-device";
+            a.style.position = "absolute";
+            a.style.visibility = "hidden";
+            document.body.appendChild(a);
+
+            var Mouse = document.getElementById("Mouse");
+            var attached = Mouse.isAttached();
+            if (attached) {
+                Mouse.activateMouse(true);
+                NewUIProps.isMouseActive = true;
+            }
+            else {
+                Mouse.activateMouse(false);
+            }
+        }
+        catch (ex) {
+        }
+    };
+    setAirMouse();
+    
+</script>
+</html>

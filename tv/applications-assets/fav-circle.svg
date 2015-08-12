@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="43" height="44" viewBox="0 0 43 44">
+  <defs>
+    <style>
+
+      .cls-2 {
+        fill: #4d4d4d;
+        stroke: #ffffff;
+        stroke-width: 3px;
+        filter: url(#drop-shadow-1);
+      }
+    </style>
+
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset in="SourceAlpha" dx="0" dy="1"/>
+      <feGaussianBlur result="dropShadow" stdDeviation="1"/>
+      <feFlood flood-color="#000000" flood-opacity="0.35"/>
+      <feComposite operator="in" in2="dropShadow"/>
+      <feComposite in="SourceGraphic" result="dropShadow"/>
+    </filter>
+  </defs>
+  <g id="fav-circle" style="fill: #4d4d4d; filter: url(#drop-shadow-1);">
+    <circle id="circle-1" class="cls-2" cx="21" cy="20" r="16" style="stroke: inherit; filter: none; fill: inherit;"/>
+  </g>
+  <use xlink:href="#circle-1" style="stroke: #ffffff; fill: none; filter: none;"/>
+</svg>

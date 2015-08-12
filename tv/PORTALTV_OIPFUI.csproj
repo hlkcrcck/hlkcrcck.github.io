@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3484A17-5058-4CE1-9F2E-666D193FC6ED}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PORTALTV_OIPFUI</RootNamespace>
+    <AssemblyName>PORTALTV_OIPFUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="allow\images\error_icon.png" />
+    <Content Include="applications-assets\1stline-box.png" />
+    <Content Include="applications-assets\2ndtline-box.png" />
+    <Content Include="applications-assets\accuweather.png" />
+    <Content Include="applications-assets\add-to-fav-icon.svg" />
+    <Content Include="applications-assets\amazon.png" />
+    <Content Include="applications-assets\app-bg-texture.png" />
+    <Content Include="applications-assets\apps-favorite-icon-outline.svg" />
+    <Content Include="applications-assets\arte.png" />
+    <Content Include="applications-assets\brand.gif" />
+    <Content Include="applications-assets\browse-icon.svg" />
+    <Content Include="applications-assets\dailymotion.png" />
+    <Content Include="applications-assets\digiturk.png" />
+    <Content Include="applications-assets\ebay.png" />
+    <Content Include="applications-assets\edit-icon-small.svg" />
+    <Content Include="applications-assets\facebook.png" />
+    <Content Include="applications-assets\fav-circle.svg" />
+    <Content Include="applications-assets\filmbox.png" />
+    <Content Include="applications-assets\flickr.png" />
+    <Content Include="applications-assets\header-menu-texture.png" />
+    <Content Include="applications-assets\ligtv.png" />
+    <Content Include="applications-assets\menu-icon.svg" />
+    <Content Include="applications-assets\mynet.png" />
+    <Content Include="applications-assets\natgeowild.png" />
+    <Content Include="applications-assets\netflix.png" />
+    <Content Include="applications-assets\ntv-spor.png" />
+    <Content Include="applications-assets\ntv.png" />
+    <Content Include="applications-assets\ok-icon.svg" />
+    <Content Include="applications-assets\opera-tv-store.png" />
+    <Content Include="applications-assets\qvc.png" />
+    <Content Include="applications-assets\rect-select.svg" />
+    <Content Include="applications-assets\right-arrow.svg" />
+    <Content Include="applications-assets\settings-icon-small.svg" />
+    <Content Include="applications-assets\skype.png" />
+    <Content Include="applications-assets\store-icon-small.svg" />
+    <Content Include="applications-assets\trt.png" />
+    <Content Include="applications-assets\ttnet.png" />
+    <Content Include="applications-assets\twitter.png" />
+    <Content Include="applications-assets\vimeo.png" />
+    <Content Include="applications-assets\YouTube.png" />
+    <Content Include="applications-assets\zdf.png" />
+    <Content Include="css\Applications.css" />
+    <Content Include="css\ChannelList.css" />
+    <Content Include="images\back-icon.png" />
+    <Content Include="images\edit-icon.png" />
+    <Content Include="images\favoritesmenu\favorites-1.png" />
+    <Content Include="images\favoritesmenu\favorites-2.png" />
+    <Content Include="images\favoritesmenu\favorites-3.png" />
+    <Content Include="images\favoritesmenu\rightarrow.png" />
+    <Content Include="images\favorites\showtv.jpg" />
+    <Content Include="images\favorites\startv.png" />
+    <Content Include="images\favorites\tv8.jpg" />
+    <Content Include="images\mainmenu\1-favorites-icon-01.svg" />
+    <Content Include="images\mainmenu\1-favorites-icon.svg" />
+    <Content Include="images\mainmenu\2-channelguide-icon.svg" />
+    <Content Include="images\mainmenu\3-applications-icon.svg" />
+    <Content Include="images\mainmenu\4-mediaplayer-icon.svg" />
+    <Content Include="images\mainmenu\5-settings-icon.svg" />
+    <Content Include="images\mainmenu\6-webbrowser-icon.svg" />
+    <Content Include="images\mainmenu\APPLICATIONS-ICON.svg" />
+    <Content Include="images\mainmenu\CHANNELGUIDE-ICON.svg" />
+    <Content Include="images\mainmenu\FAVORITES-ICON.svg" />
+    <Content Include="images\mainmenu\footer-menu-border.svg" />
+    <Content Include="images\mainmenu\footer-menu-texture.png" />
+    <Content Include="images\mainmenu\header-menu-border.svg" />
+    <Content Include="images\mainmenu\header-menu-texture.png" />
+    <Content Include="images\mainmenu\header-menu-weather-icon.svg" />
+    <Content Include="images\mainmenu\icon-shadow-1.svg" />
+    <Content Include="images\mainmenu\icon-shadow-2.svg" />
+    <Content Include="images\mainmenu\icon-shadow-3.svg" />
+    <Content Include="images\mainmenu\icon-shadow-4.svg" />
+    <Content Include="images\mainmenu\icon-shadow-5.svg" />
+    <Content Include="images\mainmenu\icon-shadow-6.svg" />
+    <Content Include="images\mainmenu\icon-shadow-7.svg" />
+    <Content Include="images\mainmenu\icon-shadow-long.svg" />
+    <Content Include="images\mainmenu\icon-shadow.svg" />
+    <Content Include="images\mainmenu\MEDIABROWSER-ICON.svg" />
+    <Content Include="images\mainmenu\RECENT-ICON.svg" />
+    <Content Include="images\mainmenu\scaled-at-200\APPLICATIONS-ICON%402x.svg" />
+    <Content Include="images\mainmenu\scaled-at-200\CHANNELGUIDE-ICON%402x.svg" />
+    <Content Include="images\mainmenu\scaled-at-200\FAVORITES-ICON%402x.svg" />
+    <Content Include="images\mainmenu\scaled-at-200\footer-menu-border%402x.svg" />
+    <Content Include="images\mainmenu\scaled-at-200\footer-menu-texture%402x.png" />
+    <Content Include="images\mainmenu\scaled-at-200\header-menu-border%402x.svg" />
+    <Content Include="images\mainmenu\scaled-at-200\header-menu-texture%402x.png" />
+    <Content Include="images\mainmenu\scaled-at-200\header-menu-weather-icon%402x.svg" />
+    <Content Include="images\mainmenu\scaled-at-200\icon-shadow-1%402x.svg" />
+    <Content Include="images\mainmenu\scaled-at-200\icon-shadow-2%402x.svg" />
+    <Content Include="images\mainmenu\scaled-at-200\icon-shadow-3%402x.svg" />
+    <Content Include="images\mainmenu\scaled-at-200\icon-shadow-4%402x.svg" />
+    <Content Include="images\mainmenu\scaled-at-200\icon-shadow-5%402x.svg" />
+    <Content Include="images\mainmenu\scaled-at-200\icon-shadow-6%402x.svg" />
+    <Content Include="images\mainmenu\scaled-at-200\icon-shadow-7%402x.svg" />
+    <Content Include="images\mainmenu\scaled-at-200\MEDIABROWSER-ICON%402x.svg" />
+    <Content Include="images\mainmenu\scaled-at-200\RECENT-ICON%402x.svg" />
+    <Content Include="images\mainmenu\scaled-at-200\SETTI¦çNGS-ICON%402x.svg" />
+    <Content Include="images\mainmenu\scaled-at-200\WEBBROWSER-ICON%402x.svg" />
+    <Content Include="images\mainmenu\scaled-at-300\APPLICATIONS-ICON.svg" />
+    <Content Include="images\mainmenu\scaled-at-300\CHANNELGUIDE-ICON.svg" />
+    <Content Include="images\mainmenu\scaled-at-300\FAVORITES-ICON.svg" />
+    <Content Include="images\mainmenu\scaled-at-300\footer-menu-border.svg" />
+    <Content Include="images\mainmenu\scaled-at-300\footer-menu-texture.png" />
+    <Content Include="images\mainmenu\scaled-at-300\header-menu-border.svg" />
+    <Content Include="images\mainmenu\scaled-at-300\header-menu-texture.png" />
+    <Content Include="images\mainmenu\scaled-at-300\header-menu-weather-icon.svg" />
+    <Content Include="images\mainmenu\scaled-at-300\icon-shadow-1.svg" />
+    <Content Include="images\mainmenu\scaled-at-300\icon-shadow-2.svg" />
+    <Content Include="images\mainmenu\scaled-at-300\icon-shadow-3.svg" />
+    <Content Include="images\mainmenu\scaled-at-300\icon-shadow-4.svg" />
+    <Content Include="images\mainmenu\scaled-at-300\icon-shadow-5.svg" />
+    <Content Include="images\mainmenu\scaled-at-300\icon-shadow-6.svg" />
+    <Content Include="images\mainmenu\scaled-at-300\icon-shadow-7.svg" />
+    <Content Include="images\mainmenu\scaled-at-300\MEDIABROWSER-ICON.svg" />
+    <Content Include="images\mainmenu\scaled-at-300\RECENT-ICON.svg" />
+    <Content Include="images\mainmenu\scaled-at-300\SETTI¦çNGS-ICON.svg" />
+    <Content Include="images\mainmenu\scaled-at-300\WEBBROWSER-ICON.svg" />
+    <Content Include="images\mainmenu\SETTINGS-ICON.svg" />
+    <Content Include="images\mainmenu\WEBBROWSER-ICON.svg" />
+    <Content Include="images\mediaplayermenu\1-mediaplayer-videos-icon.svg" />
+    <Content Include="images\mediaplayermenu\2-mediaplayer-photos-icon.svg" />
+    <Content Include="images\mediaplayermenu\3-mediaplayer-music-icon.svg" />
+    <Content Include="images\mediaplayermenu\4-mediaplayer-recordings-icon.svg" />
+    <Content Include="images\mediaplayermenu\5-mediaplayer-settings-icon.svg" />
+    <Content Include="images\mediaplayermenu\mediaplayer-menu.jpg" />
+    <Content Include="images\mediaplayermenu\scaled-at-200\1-mediaplayer-videos-icon%402x.svg" />
+    <Content Include="images\mediaplayermenu\scaled-at-200\2-mediaplayer-photos-icon%402x.svg" />
+    <Content Include="images\mediaplayermenu\scaled-at-200\3-mediaplayer-music-icon%402x.svg" />
+    <Content Include="images\mediaplayermenu\scaled-at-200\4-mediaplayer-recordings-icon%402x.svg" />
+    <Content Include="images\mediaplayermenu\scaled-at-200\5-mediaplayer-settings-icon%402x.svg" />
+    <Content Include="images\mediaplayermenu\scaled-at-300\1-mediaplayer-videos-icon.svg" />
+    <Content Include="images\mediaplayermenu\scaled-at-300\2-mediaplayer-photos-icon.svg" />
+    <Content Include="images\mediaplayermenu\scaled-at-300\3-mediaplayer-music-icon.svg" />
+    <Content Include="images\mediaplayermenu\scaled-at-300\4-mediaplayer-recordings-icon.svg" />
+    <Content Include="images\mediaplayermenu\scaled-at-300\5-mediaplayer-settings-icon.svg" />
+    <Content Include="images\menu-icon.png" />
+    <Content Include="images\move-icon.png" />
+    <Content Include="images\settingsmenu\1-settings-picture-icon.svg" />
+    <Content Include="images\settingsmenu\2-settings-sound-icon.svg" />
+    <Content Include="images\settingsmenu\3-settings-general-icon.svg" />
+    <Content Include="images\settingsmenu\4-settings-setup-icon.svg" />
+    <Content Include="images\settingsmenu\5-settings-channellist-icon.svg" />
+    <Content Include="images\settingsmenu\return-icon.svg" />
+    <Content Include="images\settingsmenu\scaled-at-200\1-settings-picture-icon%402x.svg" />
+    <Content Include="images\settingsmenu\scaled-at-200\2-settings-sound-icon%402x.svg" />
+    <Content Include="images\settingsmenu\scaled-at-200\3-settings-general-icon%402x.svg" />
+    <Content Include="images\settingsmenu\scaled-at-200\4-settings-setup-icon%402x.svg" />
+    <Content Include="images\settingsmenu\scaled-at-200\5-settings-channellist-icon%402x.svg" />
+    <Content Include="images\settingsmenu\scaled-at-200\return-icon%402x.svg" />
+    <Content Include="images\settingsmenu\scaled-at-300\1-settings-picture-icon.svg" />
+    <Content Include="images\settingsmenu\scaled-at-300\2-settings-sound-icon.svg" />
+    <Content Include="images\settingsmenu\scaled-at-300\3-settings-general-icon.svg" />
+    <Content Include="images\settingsmenu\scaled-at-300\4-settings-setup-icon.svg" />
+    <Content Include="images\settingsmenu\scaled-at-300\5-settings-channellist-icon.svg" />
+    <Content Include="images\settingsmenu\scaled-at-300\return-icon.svg" />
+    <Content Include="Index.html" />
+    <Content Include="css\Index.css" />
+    <Content Include="css\Index2.css" />
+    <Content Include="images\mainmenu\APPLICATIONS_ICON.png" />
+    <Content Include="images\mainmenu\CHANNEL_GUIDE_ICON.png" />
+    <Content Include="images\mainmenu\FAVORITES_ICON.png" />
+    <Content Include="images\mainmenu\INPUT_ICON.png" />
+    <Content Include="images\mainmenu\MEDIA_PLAYER_ICON.png" />
+    <Content Include="images\mainmenu\RECENT_ICON.png" />
+    <Content Include="images\mainmenu\SETTINGS_ICON.png" />
+    <Content Include="images\mainmenu\WEB_BROWSER_ICON.png" />
+    <Content Include="images\mainmenu\YAN_OK_ICON_ALTMENU.png" />
+    <Content Include="images\topmenu\header-menu-logo.svg" />
+    <Content Include="images\topmenu\header-menu-weather-icon.svg" />
+    <Content Include="images\topmenu\logo.png" />
+    <Content Include="images\topmenu\weatherIcon.png" />
+    <Content Include="Index_bb.html" />
+    <Content Include="ok-channellist-assets\addto-favorite-icon.svg" />
+    <Content Include="ok-channellist-assets\addtofav-icon.png" />
+    <Content Include="ok-channellist-assets\app-available-icon.svg" />
+    <Content Include="ok-channellist-assets\brand.gif" />
+    <Content Include="ok-channellist-assets\browse.png" />
+    <Content Include="ok-channellist-assets\filter-icon.png" />
+    <Content Include="ok-channellist-assets\gotono-icon.png" />
+    <Content Include="ok-channellist-assets\highlight-box.png" />
+    <Content Include="ok-channellist-assets\menu-icon.png" />
+    <Content Include="ok-channellist-assets\move-icon.png" />
+    <Content Include="ok-channellist-assets\ok-channellist.jpg" />
+    <Content Include="ok-channellist-assets\scaled-at-200\addto-favorite-icon%402x.svg" />
+    <Content Include="ok-channellist-assets\scaled-at-200\addtofav-icon%402x.png" />
+    <Content Include="ok-channellist-assets\scaled-at-200\app-available-icon%402x.svg" />
+    <Content Include="ok-channellist-assets\scaled-at-200\browse-icon%402x.png" />
+    <Content Include="ok-channellist-assets\scaled-at-200\filter-icon%402x.png" />
+    <Content Include="ok-channellist-assets\scaled-at-200\gotono-icon%402x.png" />
+    <Content Include="ok-channellist-assets\scaled-at-200\highlight-box%402x.png" />
+    <Content Include="ok-channellist-assets\scaled-at-200\menu-icon%402x.png" />
+    <Content Include="ok-channellist-assets\scaled-at-200\move-icon%402x.png" />
+    <Content Include="ok-channellist-assets\scaled-at-200\watch-icon%402x.png" />
+    <Content Include="ok-channellist-assets\scaled-at-300\addto-favorite-icon.svg" />
+    <Content Include="ok-channellist-assets\scaled-at-300\addtofav-icon.png" />
+    <Content Include="ok-channellist-assets\scaled-at-300\app-available-icon.svg" />
+    <Content Include="ok-channellist-assets\scaled-at-300\browse-icon.png" />
+    <Content Include="ok-channellist-assets\scaled-at-300\filter-icon.png" />
+    <Content Include="ok-channellist-assets\scaled-at-300\gotono-icon.png" />
+    <Content Include="ok-channellist-assets\scaled-at-300\highlight-box.png" />
+    <Content Include="ok-channellist-assets\scaled-at-300\menu-icon.png" />
+    <Content Include="ok-channellist-assets\scaled-at-300\move-icon.png" />
+    <Content Include="ok-channellist-assets\scaled-at-300\watch-icon.png" />
+    <Content Include="ok-channellist-assets\watch-icon.png" />
+    <Content Include="script\AppStarter.js" />
+    <Content Include="script\ChannelList.js" />
+    <Content Include="script\jquery-2.1.4.min.js" />
+    <Content Include="script\JScript1.js" />
+    <Content Include="script\Functions.js" />
+    <Content Include="script\Keys.js" />
+    <Content Include="script\Navigation.js" />
+    <Content Include="script\Applications.js" />
+    <Content Include="script\Starter.js" />
+    <Content Include="Applications.html" />
+    <Content Include="Test.html" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MB100AppCacheManifest.ashx.cs">
+      <DependentUpon>MB100AppCacheManifest.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="css\fonts\SourceSansPro-Black.ttf" />
+    <None Include="css\fonts\SourceSansPro-BlackItalic.ttf" />
+    <None Include="css\fonts\SourceSansPro-Bold.ttf" />
+    <None Include="css\fonts\SourceSansPro-BoldItalic.ttf" />
+    <None Include="css\fonts\SourceSansPro-ExtraLight.ttf" />
+    <None Include="css\fonts\SourceSansPro-ExtraLightItalic.ttf" />
+    <None Include="css\fonts\SourceSansPro-Italic.ttf" />
+    <None Include="css\fonts\SourceSansPro-Light.ttf" />
+    <None Include="css\fonts\SourceSansPro-LightItalic.ttf" />
+    <None Include="css\fonts\SourceSansPro-Regular.ttf" />
+    <None Include="css\fonts\SourceSansPro-Semibold.ttf" />
+    <None Include="css\fonts\SourceSansPro-SemiboldItalic.ttf" />
+    <Content Include="MB100AppCacheManifest.ashx" />
+    <Content Include="css\header-footer-menus-css.css" />
+    <None Include="ok-channellist-assets\ok_channellist_measurements.pdf" />
+    <None Include="ok-channellist-assets\scaled-at-200\.DS_Store" />
+    <None Include="ok-channellist-assets\scaled-at-300\.DS_Store" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>27945</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/NEWTV_UI</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

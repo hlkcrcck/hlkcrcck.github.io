@@ -1,0 +1,244 @@
+﻿@font-face
+{
+    font-family: 'SourceSansPro-Light';
+    src: url('fonts/SourceSansPro-Light.ttf');
+}
+@font-face
+{
+    font-family: 'SourceSansPro-Bold';
+    src: url('fonts/SourceSansPro-Bold.ttf');
+}
+@font-face {
+    font-family: SourceSansPro;
+    src: url('fonts/SourceSansPro-Regular.ttf');
+}
+@font-face
+{
+    font-family: 'SourceSansPro-Semibold';
+    src: url('fonts/SourceSansPro-Semibold.ttf');
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    outline: 0;
+}
+body {
+    overflow: hidden;
+    margin: 0px;
+}
+.channelList {
+    position:absolute;
+    top:164px;
+    left:-720px;
+    height:920px;
+    width:720px;
+    background-color:#333333;
+    transition: all 0.5s ease-in; 
+                -webkit-transform: translate3d(0, 0, 0);
+     -webkit-transform-style: preserve-3d;
+ -webkit-backface-visibility: hidden;
+    
+}
+.channels {
+    position:absolute;
+    height:720px;
+    width:720px;
+    overflow: hidden;
+}
+.channelsSlider 
+{
+    width:720px;
+    position:absolute;
+}
+.channelElement {
+    height:72px;
+    width: 720px;
+    font-family: "SourceSansPro-Semibold";
+    font-size: 25pt;
+    color:#e6e6e6;
+    position:relative;
+}
+.channelLogo 
+{
+    float: left;
+    background-image: url("../ok-channellist-assets/brand.gif");
+    background-size: 50px;
+    position:relative;
+    top:10px;
+    margin-left: 40px;
+    width:50px;
+    height:50px;
+    display:inline-block;
+}
+.channelIndex 
+{
+    float: left;
+    top: 10px;
+    position:relative;
+    font-family: "SourceSansPro";
+    font-size: 30px;
+    color:#e6e6e6;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    margin-left:30px;
+    display:inline-block;
+}
+.channelName 
+{
+    float: left;
+    top: 10px;
+    position: relative;
+    font-family: "SourceSansPro";
+    font-size: 30px;
+    color: #e6e6e6;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    margin-left: 30px;
+    display: inline-block;
+}
+.channelAva 
+{
+    float: right;
+    background-image: url("../ok-channellist-assets/app-available-icon.svg");
+    width: 29px;
+    height: 29px;
+    top:20px;
+    position: relative;
+    background-size: 98%;
+    background-position: center;
+    display: inline-block;
+    margin-left: 40px;
+}
+.channelType 
+{
+    float: right;
+    top:10px;
+    position:relative;
+    font-family: "SourceSansPro";
+    font-size: 30px;
+    color:#808080;
+    width: 160px;
+    display:inline-block;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+.channelFav 
+{
+    float: right;
+    width: 29px;
+    height: 29px;
+    top:20px;
+    position: relative;
+    background-size: 98%;
+    background-position: center;
+    right: 40px;
+    display: inline-block;
+    margin-left: 40px;
+}
+.channelElementSelected {
+    background: -moz-linear-gradient(0deg, rgb(3,143,110) 0%,rgba(51,51,51,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgb(3,143,110) 0%,rgba(51,51,51,0) 100%);
+    background: -ms-linear-gradient( 0deg,rgb(3,143,110) 0%,rgba(51,51,51,0) 100%);
+    width: 720px;
+    height: 70px;
+}
+.edit {
+    top: 720px;
+    height: 200px;
+    width: 720px;
+    position: absolute;
+}
+.sattelite 
+{
+    float: left;
+    margin-top: 25px;
+    height: 55px;
+    line-height: 55px;
+    background-color: #038f6e;
+    font-family: "SourceSansPro";
+    font-size: 20px;
+    color:#e6e6e6;
+    width: 211px;
+    display:inline-block;
+    margin-left : 40px;
+    margin-right: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+.analog-cable {
+    float: left;
+    margin-top: 25px;
+    height: 55px;
+    line-height: 55px;
+    background-color: #4d4d4d;
+    font-family: "SourceSansPro";
+    font-size: 20px;
+    color:#e6e6e6;
+    width: 211px;
+    display:inline-block;
+    margin-right: 2px;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+.mdel {
+    float: left;
+    margin-top: 25px;
+    height: 55px;
+    line-height: 55px;
+    background-color: #4d4d4d;
+    font-family: "SourceSansPro";
+    font-size: 20px;
+    color:#e6e6e6;
+    width: 178px;
+    display:inline-block;
+    margin-right: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+.mdelSelected{  
+    background-color: #038f6e; 
+    
+}
+.channelOperationElement
+{
+    position:relative;
+    top:20px;
+    font-size: 15px;
+    color:#808080;
+    display:inline-block;
+}
+.channelOperationElement p
+{
+    margin-left: 5px;
+    position: relative;
+    top: -5px;
+    font-family: "SourceSansPro-Light";
+    display:inline-block;
+    letter-spacing: .75px
+}
+ .channelOperationElement img
+{
+     margin-left: 37px;
+     background-color: #333333;
+}
+.settingInfoElement:nth-child(1) img{
+    margin-left: 40px;
+}
+
+
+
