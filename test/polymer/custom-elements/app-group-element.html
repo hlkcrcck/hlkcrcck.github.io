@@ -1,0 +1,50 @@
+﻿<link rel="import"
+      href="/polymer/polymer.html">
+<link rel="import" href="app-type-element.html">
+<link rel="import" href="apps-element.html">
+
+<dom-module id="app-group-element">
+
+  <template>
+    <style>
+        :host{
+            display:inline-block;
+    }
+    </style>
+    <div>
+        <app-type-element is_group_selected="{{is_group_selected}}" app_type_name="{{app_type_name}}" app_type_img="{{app_type_img}}"></app-type-element>
+        <apps-element is_group_selected="{{is_group_selected}}" ajax_url="{{ajax_url}}"></apps-element>
+    </div>
+
+  </template>
+
+  <script>
+      Polymer({
+          is: "app-group-element",
+          properties: {
+              app_type_name: {
+                  type: String,
+                  value: "App_Group_Name"  //default 
+              },
+              app_type_img: {
+                  type: String,
+                  value: "https://www.kanald.com.tr/assets/img/logo.v2.png" //default 
+              },
+              group_index: {
+                  type: String,
+                  value: "0"  //default 
+              },
+              is_group_selected: {
+                  type: Boolean,
+                  value: false //default 
+              },
+              ajax_url: {
+                  type: String,
+                  value: ""
+              }
+          }
+      });
+
+  </script>
+
+</dom-module>

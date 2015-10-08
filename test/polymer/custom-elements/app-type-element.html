@@ -1,0 +1,59 @@
+﻿<link rel="import"
+      href="/polymer/polymer.html">
+<link rel="import" href="highlight-behavior.html">
+
+<dom-module id="app-type-element">
+
+  <template>
+    <style>
+        :host{
+            width: 200px;
+            height: 300px;
+            border: solid 2px black;
+            display:inline-block;
+            margin:5px;
+            background-color:gray;
+        }
+        :host.highlighted {
+              background-color: yellow;
+         }
+        #app_type_img
+        {
+            width:100px;
+            height:100px;
+            margin-left:50px;
+        }
+        #app_type_name
+        {
+            width:100%;
+            text-align:center;        
+        }
+    </style>
+
+        <img id="app_type_img" src="{{app_type_img}}" />
+        <div id="app_type_name">{{app_type_name}}</div>
+
+  </template>
+
+  <script>
+      Polymer({
+          is: "app-type-element",
+          //behaviors: [HighlightBehavior],
+          properties: {
+              app_type_name:{
+                  type:String,
+                  value:"App_Type_Name"  //default ad
+              },
+              app_type_img: {
+                  type: String,
+                  value: "https://www.kanald.com.tr/assets/img/logo.v2.png" //default resim
+              },
+              is_group_selected: {
+                  type: Boolean,
+                  value: false  //default ad
+              }
+          }
+      });
+  </script>
+
+</dom-module>

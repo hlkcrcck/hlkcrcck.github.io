@@ -1,0 +1,48 @@
+﻿<link rel="import" href="/polymer/polymer-elements/iron-a11y-keys/iron-a11y-keys.html">
+<link rel="import" href="/polymer/custom-elements/app-group-element.html">
+
+<dom-module id="main-element">
+
+  <template>
+    <style>
+
+    </style>
+        <iron-a11y-keys  target="[[target]]" keys="up" on-keys-pressed="_selectUp"></iron-a11y-keys>
+        <iron-a11y-keys   target="[[target]]" keys="down" on-keys-pressed="_selectDown"></iron-a11y-keys>
+
+      <app-group-element ajax_url="http://beta.api.portaltv.tv/api/applications/getapplications" app_type_name="Futured Apps" group_index="0" is_group_selected="{{isSelected(0, selected_index)}}" ></app-group-element>
+      <app-group-element ajax_url="recent.json" app_type_name="Recent Apps" group_index="1" is_group_selected="{{isSelected(1, selected_index)}}"></app-group-element>
+      <app-group-element ajax_url="myapps.json" app_type_name="My Apps" group_index="2" is_group_selected="{{isSelected(2, selected_index)}}"></app-group-element>
+
+  </template>
+    <script>
+        Polymer({
+            is: "main-element",
+            properties: {
+                app_type_count: {
+                    type: Number,
+                    value: 3
+                },
+                selected_index: {
+                    type: Number,
+                    value: 0  //default ad
+                },
+                target: {
+                    type: Object,
+                    value: function () {
+                        return document.body;
+                    }
+                }
+            },
+            _selectUp: function (event) {
+                this.selected_index = (((this.selected_index - 1) % this.app_type_count) + this.app_type_count) % this.app_type_count;
+            },
+            _selectDown: function (event) {
+                this.selected_index = ((this.selected_index + 1) + this.app_type_count) % this.app_type_count;
+            },
+            isSelected: function (ind, sel) {
+                return ind == sel;
+            }
+        });
+    </script>  
+</dom-module>

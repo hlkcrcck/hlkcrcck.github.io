@@ -1,0 +1,26 @@
+[
+  {
+    "name": "TRT",
+    "description": "Youtube",
+    "url": "http://www.youtube.com/tv",
+    "logoUrl": "http://3.bp.blogspot.com/-DxweC5xp0Vs/TtWqvUkAazI/AAAAAAAAAw4/2kTyM7bXKSo/s1600/trt-logo.gif",
+    "categoryName": "Video",
+    "isNew": true
+  },
+    {
+    "name": "Dsmart",
+    "description": "Youtube",
+    "url": "http://www.youtube.com/tv",
+    "logoUrl": "http://3.bp.blogspot.com/-DxweC5xp0Vs/TtWqvUkAazI/AAAAAAAAAw4/2kTyM7bXKSo/s1600/trt-logo.gif",
+    "categoryName": "Video",
+    "isNew": true
+  },
+    {
+    "name": "SHOW TV",
+    "description": "Youtube",
+    "url": "http://www.youtube.com/tv",
+    "logoUrl": "http://3.bp.blogspot.com/-iFrtsg17Da8/TtWsEu4IbMI/AAAAAAAAAxo/oNUvN7ODJgs/s1600/Show-TV-logo.png",
+    "categoryName": "Video",
+    "isNew": true
+  }
+]

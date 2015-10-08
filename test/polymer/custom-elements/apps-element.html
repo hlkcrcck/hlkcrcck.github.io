@@ -1,0 +1,93 @@
+﻿<link rel="import"
+      href="app-element.html">
+<link rel="import"
+      href="../polymer-elements/iron-ajax/iron-ajax.html">
+<link rel="import" href="/polymer/polymer-elements/iron-a11y-keys/iron-a11y-keys.html">
+
+<dom-module id="apps-element">
+
+  <template>
+    <style>
+        :host{
+            display:inline-block;
+    }
+         :host.hidden {
+              display: none;
+         }
+    </style>
+
+    <div>
+
+        <iron-a11y-keys  target="[[target]]" keys="left" on-keys-pressed="_selectPrev"></iron-a11y-keys>
+        <iron-a11y-keys  target="[[target]]" keys="right" on-keys-pressed="_selectNext"></iron-a11y-keys>
+
+        <iron-ajax
+            auto
+            url="{{ajax_url}}"
+            handle-as="json"
+            on-response="handleResponse"
+            last-response="{{ajaxResponse}}"
+            headers='{"macid": "00:09:DC:11:22:34","brand": "VESTEL","device": "MB90","country": "tur","swversion": "0.1.10.1"}'
+            >
+        </iron-ajax>
+            <template is="dom-repeat" items="[[ajaxResponse]]">
+                    <app-element is_selected="{{isSelected(index, selected_index)}}" app_index="{{index}}" app_name="{{item.name}}" app_img="{{item.logoUrl}}"></app-element>
+            </template>
+    </div>
+  </template>
+
+  <script>
+      Polymer({
+          is: "apps-element",
+          properties: {
+              app_count: {
+                  type: Number,
+                  value:0
+              },
+              ajax_url:{
+                  type:String,
+                  value:"test.json"  //default ad
+              },
+              selected_index: {
+                  type: Number,
+                  value: 0  //default ad
+              },
+              target: {
+                  type: Object,
+                  value: function () {
+                      return document.body;
+                  }
+              },
+              is_group_selected: {
+                  type: Boolean,
+                  value: false,
+                  observer: '_is_group_selectedChanged'
+              }
+          },
+          ready: function () {
+              this.toggleClass('hidden', !this.is_group_selected);
+          },
+          _is_group_selectedChanged: function (oldValue, newValue) {
+              this.toggleClass('hidden', newValue);
+              this.selected_index = 0; //seçili grup değiştiğinde, seçili uygulamanın indexini sıfırlıyoruz
+          },
+          handleResponse: function (data) {
+              console.log(data.detail.response);
+              console.log("ajax");
+          },
+          _selectNext: function (event) {
+              if(this.is_group_selected)//seçili olmayan gruptaki uygulamaların selected_index'ini değiştirmiyoruz
+                this.selected_index = ((this.selected_index + 1) + this.app_count) % this.app_count;
+          },
+          _selectPrev: function (event) {
+              if (this.is_group_selected)//seçili olmayan gruptaki uygulamaların selected_index'ini değiştirmiyoruz
+                this.selected_index = (((this.selected_index - 1) % this.app_count) + this.app_count) % this.app_count;
+          },
+          isSelected: function (ind, sel) {
+              this.app_count = ind+1;
+              return ind == sel;
+          }
+      });
+  </script>
+
+</dom-module>

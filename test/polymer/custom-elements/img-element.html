@@ -1,0 +1,30 @@
+<link rel="import"
+	  href="/polymer/polymer.html">
+	  
+<dom-module id="img-element">
+
+	<template>
+		<style>
+			#app_img{
+				width:100px;
+                height:100px;
+                margin-left:50px;
+			}
+			
+		</style>
+		
+		<img id="app_img" src="{{app_img}}" alt="{{app_img}}"/>
+	</template>
+	
+	<script>
+		Polymer({
+			is: "img-element",
+			properties:{
+				app_img:{
+					type:String,
+					value: "https://www.kanald.com.tr/assets/img/logo.v2.png"
+				}
+			}
+		});
+	</script>
+</dom-module>		
