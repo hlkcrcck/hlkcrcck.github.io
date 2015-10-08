@@ -1,5 +1,0 @@
-C:\Projects\andromeda\ANDROMEDA\bin\ANDROMEDA.dll
-C:\Projects\andromeda\ANDROMEDA\bin\ANDROMEDA.pdb
-C:\Projects\andromeda\ANDROMEDA\obj\Debug\ANDROMEDA.csprojResolveAssemblyReference.cache
-C:\Projects\andromeda\ANDROMEDA\obj\Debug\ANDROMEDA.dll
-C:\Projects\andromeda\ANDROMEDA\obj\Debug\ANDROMEDA.pdb
