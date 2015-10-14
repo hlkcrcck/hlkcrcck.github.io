@@ -1,0 +1,13 @@
+{
+  "apps": [
+    {"name":"TRT","image":"http://3.bp.blogspot.com/-DxweC5xp0Vs/TtWqvUkAazI/AAAAAAAAAw4/2kTyM7bXKSo/s1600/trt-logo.gif"},
+	{"name":"ATV","image":"http://4.bp.blogspot.com/-_Rka8OMtJ3g/TtcMepNIKVI/AAAAAAAAA4w/xGO4Kr0hQ9k/s1600/atv_logo.png"},
+	{"name":"Star TV","image":"http://2.bp.blogspot.com/-zr1P6E9oFf0/TwBcI32AXHI/AAAAAAAABKg/X6k0YSCTKUg/s320/star-tv-yeni-logo.jpg"},
+	{"name":"NTV","image":"http://2.bp.blogspot.com/-rp_PCtFYZsg/TtWsZXDfzPI/AAAAAAAAAx4/C54KJn-vg3Y/s1600/NTV_logo.png"},
+	{"name":"TV8","image":"http://1.bp.blogspot.com/-Ge3P57Cp5Mc/VDWGUpfRKnI/AAAAAAAAJko/tmSrQKdbChA/s1600/Tv8_Yeni_Logo.png"},
+	{"name":"Lig Tv","image":"http://2.bp.blogspot.com/-R7x_VBGt2oI/Ttb6j_faKsI/AAAAAAAAA2Q/AU7qH3OqVuU/s1600/Lig_TV_logo.png"},
+	{"name":"Digiturk","image":"http://3.bp.blogspot.com/-QlH0txKJ6Wk/Ttb7Ym_V42I/AAAAAAAAA2o/zxdXnEjS_ac/s320/Digiturk_logo.png"},
+	{"name":"Dsmart","image":"http://2.bp.blogspot.com/-gCLIVOa6jUU/Ttb7qDtW_GI/AAAAAAAAA2w/iWI3HJCcbEw/s1600/D-Smart_logo.png"},
+    {"name":"SHOW TV ","image":"http://3.bp.blogspot.com/-iFrtsg17Da8/TtWsEu4IbMI/AAAAAAAAAxo/oNUvN7ODJgs/s1600/Show-TV-logo.png"}
+  ]
+}
