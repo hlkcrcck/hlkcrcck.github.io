@@ -72,44 +72,17 @@
         <link type="text/css" href="last-time.css" rel="stylesheet" />
         <script type="text/javascript" src="ac_quicktime.js"></script>
 
-        <script>
-            function jumpToTime(timeInSecs)
-            {
-                try
-                {
-                    var vid = document.getElementById("paris_video");
-                    if ( vid && ('VIDEO' == vid.tagName) && vid.currentTime )
-                    {
-                        // video tag, use it
-                        vid.currentTime = timeInSecs;
-                        return;
-                    }
-
-                    // browser apparently doesn't support video, look for embed then for an object
-                    vid = document.getElementById("paris_embed");
-                    if ( !vid ) 
-                        vid = document.getElementById("paris_obj");
-                    if ( vid && vid.GetTimeScale ) 
-                    {
-                        // time in QuickTime is in timescale units per second, convert from param in seconds
-                        var timeScale = vid.GetTimeScale();
-                        vid.SetTime(timeInSecs * timeScale);
-                    }
-                }
-                catch(e) {} 
-            }
-            // 
-        </script> 
     </head>
     <body>
-                <script>
-QT_WriteOBJECT('media/logo.jpg','640','496','',
-'href','rtsp://@192.168.2.211/vod/the_matrix.ts',
-'target','myself',
-'controller','true',
-'autoplay','true'
-);
-                </script> 
+<OBJECT classid='clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B' width="320" height="240" codebase='http://www.apple.com/qtactivex/qtplugin.cab'>
+        <param name='src' value="rtsp://@192.168.2.211/vod/the_matrix.ts">
+        <param name='autoplay' value="true">
+        <param name='controller' value="false">
+        <param name='loop' value="false">
+        <EMBED src="rtsp://@192.168.2.211/vod/the_matrix.ts" width="320" height="240" autoplay="true"
+        controller="true" loop="false" bgcolor="#000000" pluginspage='http://www.apple.com/quicktime/download/'>
+        </EMBED>
+</OBJECT> 
 
     </body>
 </html>
